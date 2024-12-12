@@ -12,17 +12,17 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop",
     title: "Invest in Profitable Real Estate Flips—Without Lifting a Hammer",
     subtitle: "Partner with Co-Flips to access top-tier opportunities, expert management, and share in the profits—no hassles required.",
   },
   {
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
     title: "Expert Management, Maximum Returns",
     subtitle: "Let our experienced team handle everything while you focus on what matters—growing your wealth.",
   },
   {
-    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
     title: "Start Your Investment Journey Today",
     subtitle: "Join successful investors who trust Co-Flips for their real estate investments.",
   },
@@ -67,7 +67,7 @@ export const Hero = () => {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
-                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-black/70" />
               </div>
               <div className="relative h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                 <h1 
