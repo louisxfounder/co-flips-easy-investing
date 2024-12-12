@@ -3,11 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
 import { useState } from "react";
+import Index from "./pages/Index";
 
 const App = () => {
-  // Initialize queryClient inside the component using useState to ensure proper React context
   const [queryClient] = useState(() => new QueryClient());
 
   return (
@@ -18,6 +17,10 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/track-record" element={<Index />} /> {/* Placeholder */}
+            <Route path="/opportunities" element={<Index />} /> {/* Placeholder */}
+            <Route path="/invest" element={<Index />} /> {/* Placeholder */}
+            <Route path="/portal" element={<Index />} /> {/* Placeholder */}
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
