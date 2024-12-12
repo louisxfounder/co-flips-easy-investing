@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <>
       <MainNav />
-      <main className="pt-10"> {/* Reduced padding-top to match new header height */}
+      <main className="pt-8"> {/* Adjusted padding-top to match new header height */}
         <Hero />
         <Process />
         <Testimonials />
