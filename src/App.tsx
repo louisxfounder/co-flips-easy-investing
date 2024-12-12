@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import { useState } from "react";
 
 const App = () => {
-  // Move queryClient inside component to ensure proper React context
+  // Initialize queryClient inside the component using useState to ensure proper React context
   const [queryClient] = useState(() => new QueryClient());
 
   return (
