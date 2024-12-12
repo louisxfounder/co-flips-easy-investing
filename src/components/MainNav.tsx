@@ -20,18 +20,18 @@ const MainNav = () => {
   ];
 
   const NavLinks = ({ mobile = false, onClick = () => {} }) => (
-    <div className={`${mobile ? 'flex flex-col space-y-1' : 'hidden md:flex md:space-x-1'}`}>
+    <div className={`${mobile ? 'flex flex-col space-y-1' : 'hidden md:flex md:space-x-4'}`}>
       {menuItems.map((item) => {
         const Icon = item.icon;
         return (
           <Link
             key={item.path}
             to={item.path}
-            className={`flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors
+            className={`flex items-center space-x-2 text-gray-700 hover:text-primary transition-colors
               ${mobile ? 'text-sm py-1' : 'text-xs font-medium'}`}
             onClick={onClick}
           >
-            <Icon className="h-4 w-4" />
+            <Icon className="h-3 w-3" />
             <span>{item.label}</span>
           </Link>
         );
@@ -45,7 +45,7 @@ const MainNav = () => {
         <div className="flex h-8 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-1">
-            <Building2 className="h-4 w-4 text-primary" />
+            <Building2 className="h-3 w-3 text-primary" />
             <span className="text-sm font-bold text-primary">CoFlips</span>
           </Link>
 
@@ -56,7 +56,7 @@ const MainNav = () => {
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon" className="h-6 w-6">
-                <Menu className="h-4 w-4" />
+                <Menu className="h-3 w-3" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
@@ -70,7 +70,7 @@ const MainNav = () => {
                     className="h-6 w-6"
                     onClick={() => setIsOpen(false)}
                   >
-                    <X className="h-4 w-4" />
+                    <X className="h-3 w-3" />
                   </Button>
                 </div>
                 <nav className="flex-1">
