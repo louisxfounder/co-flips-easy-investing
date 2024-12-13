@@ -1,9 +1,13 @@
+import MainNav from "@/components/MainNav";
 import { InvestmentForm } from "@/components/InvestmentForm";
 
 export default function Invest() {
   return (
-    <main className="pt-8">
-      <InvestmentForm />
-    </main>
+    <>
+      <MainNav />
+      <main className="pt-8 container mx-auto px-4">
+        <InvestmentForm />
+      </main>
+    </>
   );
 }
