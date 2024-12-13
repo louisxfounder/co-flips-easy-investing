@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Index from "./pages/Index";
 import SellYourHouse from "./pages/SellYourHouse";
+import Invest from "./pages/Invest";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -19,9 +20,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/sell-your-house" element={<SellYourHouse />} />
+            <Route path="/invest" element={<Invest />} />
             <Route path="/track-record" element={<Index />} /> {/* Placeholder */}
             <Route path="/opportunities" element={<Index />} /> {/* Placeholder */}
-            <Route path="/invest" element={<Index />} /> {/* Placeholder */}
             <Route path="/portal" element={<Index />} /> {/* Placeholder */}
           </Routes>
         </BrowserRouter>

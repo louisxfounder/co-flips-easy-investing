@@ -71,20 +71,36 @@ export const InvestmentForm = () => {
             </div>
             
             {investmentType === "capital" && (
-              <div>
-                <Label htmlFor="investmentSize">Investment Size</Label>
-                <Select required>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select investment size" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="50000">$50,000</SelectItem>
-                    <SelectItem value="100000">$100,000</SelectItem>
-                    <SelectItem value="250000">$250,000</SelectItem>
-                    <SelectItem value="1000000">$1,000,000</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
+              <>
+                <div>
+                  <Label htmlFor="investmentSize">Investment Size</Label>
+                  <Select required>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select investment size" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="50000">$50,000</SelectItem>
+                      <SelectItem value="100000">$100,000</SelectItem>
+                      <SelectItem value="250000">$250,000</SelectItem>
+                      <SelectItem value="1000000">$1,000,000</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <Label htmlFor="investmentGoal">Investment Goal</Label>
+                  <Select required>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your investment goal" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="monthlyCashflow">Monthly Cash Flow</SelectItem>
+                      <SelectItem value="yearlyReturns">Yearly Returns</SelectItem>
+                      <SelectItem value="longTermGrowth">Long Term Capital Growth</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </>
             )}
             
             <Button 
