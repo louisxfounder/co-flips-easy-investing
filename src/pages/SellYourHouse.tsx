@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, ClipboardCheck, HandshakeIcon, PiggyBank } from "lucide-react";
 import MainNav from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 import {
   Carousel,
   CarouselContent,
@@ -54,9 +55,9 @@ const SellYourHouse = () => {
   }, [api]);
   
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <MainNav />
-      <main className="pt-8">
+      <main className="flex-grow pt-8">
         {/* Hero Section with Carousel */}
         <section className="relative h-[100svh] w-full overflow-hidden">
           <Carousel
@@ -222,7 +223,8 @@ const SellYourHouse = () => {
           </div>
         </section>
       </main>
-    </>
+      <Footer />
+    </div>
   );
 };
 
