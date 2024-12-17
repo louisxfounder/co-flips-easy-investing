@@ -39,10 +39,9 @@ export const Hero = () => {
       setCurrent(api.selectedScrollSnap());
     });
 
-    // Increased autoplay interval from 5000ms to 10000ms (10 seconds)
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
