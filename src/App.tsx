@@ -7,6 +7,7 @@ import { useState } from "react";
 import Index from "./pages/Index";
 import SellYourHouse from "./pages/SellYourHouse";
 import Invest from "./pages/Invest";
+import PropertyDisposition from "./pages/PropertyDisposition";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/sell-your-house" element={<SellYourHouse />} />
             <Route path="/invest" element={<Invest />} />
+            <Route path="/property-disposition" element={<PropertyDisposition />} />
             <Route path="/track-record" element={<Index />} /> {/* Placeholder */}
             <Route path="/opportunities" element={<Index />} /> {/* Placeholder */}
             <Route path="/portal" element={<Index />} /> {/* Placeholder */}

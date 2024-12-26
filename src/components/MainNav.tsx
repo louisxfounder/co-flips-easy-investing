@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Building2, DollarSign, Home, House } from "lucide-react";
+import { Menu, X, Building2, DollarSign, Home, House, LayoutDashboard } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Sheet,
@@ -15,6 +15,7 @@ const MainNav = () => {
     { icon: Home, label: "Home", path: "/" },
     { icon: House, label: "Sell Your House", path: "/sell-your-house" },
     { icon: DollarSign, label: "Invest Now", path: "/invest" },
+    { icon: LayoutDashboard, label: "Property Disposition", path: "/property-disposition" },
   ];
 
   const NavLinks = ({ mobile = false, onClick = () => {} }) => (
