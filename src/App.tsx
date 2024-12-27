@@ -22,7 +22,7 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/sell-your-house" element={<SellYourHouse />} />
             <Route path="/invest" element={<Invest />} />
-            <Route path="/property-disposition" element={<PropertyDisposition />} />
+            <Route path="/off-market-properties" element={<PropertyDisposition />} />
             <Route path="/track-record" element={<Index />} /> {/* Placeholder */}
             <Route path="/opportunities" element={<Index />} /> {/* Placeholder */}
             <Route path="/portal" element={<Index />} /> {/* Placeholder */}

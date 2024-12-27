@@ -15,7 +15,7 @@ const MainNav = () => {
     { icon: Home, label: "Home", path: "/" },
     { icon: House, label: "Sell Your House", path: "/sell-your-house" },
     { icon: DollarSign, label: "Invest Now", path: "/invest" },
-    { icon: LayoutDashboard, label: "Property Disposition", path: "/property-disposition" },
+    { icon: LayoutDashboard, label: "Off Market Properties", path: "/off-market-properties" },
   ];
 
   const NavLinks = ({ mobile = false, onClick = () => {} }) => (
