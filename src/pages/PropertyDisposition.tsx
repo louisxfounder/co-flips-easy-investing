@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import { Process } from "@/components/Process";
-import { Testimonials } from "@/components/Testimonials";
 import { ShieldCheck, Users, LifeBuoy, Search, Calculator, User, Trophy, Building2, DollarSign, Repeat } from "lucide-react";
 import MainNav from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -152,9 +151,6 @@ const PropertyDisposition = () => {
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <Testimonials />
 
       {/* Additional Services Section */}
       <section className="py-16 bg-white">
