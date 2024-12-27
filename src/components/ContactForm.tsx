@@ -64,7 +64,6 @@ export const ContactForm = () => {
             method="POST"
             data-netlify="true"
             name="consultation-form"
-            netlify
           >
             <input type="hidden" name="form-name" value="consultation-form" />
             
